@@ -1,6 +1,6 @@
 export default () => ({
   "todo": {
-    enabled: true,
+    enabled: false,
     resolve: "./src/plugins/todo", // path to plugin folder
   },
 });
