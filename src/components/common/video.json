@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_common_videos",
+  "info": {
+    "displayName": "video",
+    "icon": "play"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

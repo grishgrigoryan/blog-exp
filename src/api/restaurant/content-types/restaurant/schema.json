@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurants",
+  "info": {
+    "singularName": "restaurant",
+    "pluralName": "restaurants",
+    "displayName": "Restaurant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "restaurants"
+    },
+    "addresses": {
+      "displayName": "Address",
+      "type": "component",
+      "repeatable": true,
+      "component": "common.address"
+    },
+    "hero": {
+      "type": "dynamiczone",
+      "components": [
+        "common.video",
+        "common.map"
+      ]
+    }
+  }
+}

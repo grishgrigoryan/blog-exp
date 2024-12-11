@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_common_maps",
+  "info": {
+    "displayName": "map",
+    "icon": "pinMap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "lat": {
+      "displayName": "geo",
+      "type": "component",
+      "repeatable": false,
+      "component": "common.geo"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "yandex",
+        "google"
+      ]
+    }
+  }
+}
